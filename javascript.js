@@ -7,9 +7,6 @@ function getComputerChoice(){
     return computerSelection;
 }
 
-// console.log(getComputerChoice());
-
-
 function playRound(playerSelection, computerSelection){
     if(playerSelection.toLowerCase() === 'rock' && computerSelection === 'paper'){
         return 'You Lose!';
@@ -43,8 +40,12 @@ function playRound(playerSelection, computerSelection){
     } 
 }
 
-// console.log(playRound(playerSelection, computerSelection));
-
+/*
+To Chris: Below is the part I'm not sure about. 
+Because it is 5 rounds of rock, paper, scissors, I used a loop.
+Inside the loop, to get the output from the functions  getComputerChoice and playRound, I used console.log. Am not sure if that is right or not.
+Thanks!
+*/
 
 let playerScore = Number();
 let computerScore = Number();
