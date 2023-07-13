@@ -1,6 +1,6 @@
-let playerSelection = '';
+let playerSelection;
 let computerSelection;
-let options = ['rock', 'paper', 'scissors'];
+const options = ['rock', 'paper', 'scissors'];
 
 function getComputerChoice(){
     computerSelection = options[Math.floor(Math.random()*options.length)];
@@ -39,34 +39,21 @@ function playRound(playerSelection, computerSelection){
         return 'Invalid entry';
     } 
 }
-
-/*
-To Chris: Below is the part I'm not sure about. 
-Because it is 5 rounds of rock, paper, scissors, I used a loop.
-Inside the loop, to get the output from the functions  getComputerChoice and playRound, I used console.log. Am not sure if that is right or not.
-Thanks!
-*/
-
-let playerScore = Number();
-let computerScore = Number();
+let playerScore = 0;
+let computerScore = 0;
 
 function game(){
     for(let i = 0; i < 5; i++){
         playerSelection = prompt('Please enter Rock, Paper or Scissors');
+        console.log(playerSelection);
         console.log(getComputerChoice());
         console.log(playRound(playerSelection, computerSelection));
 
         if(playRound(playerSelection, computerSelection) === 'You Win!'){
             playerScore += 1;
-            computerScore += 0;
         }
         else if(playRound(playerSelection, computerSelection) === 'You Lose!'){
-            playerScore += 0;
             computerScore += 1;
-        }
-        else if(playRound(playerSelection, computerSelection) === 'It is a Tie'){
-            playerScore += 0;
-            computerScore += 0;
         }
     }
 }
