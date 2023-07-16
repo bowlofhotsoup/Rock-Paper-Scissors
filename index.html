@@ -3,13 +3,32 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Rock, Paper or Scissors game</title>
+    <title>Rock Paper Scissors</title>
+    <script src="javascript.js" defer></script>
   </head>
 
   <body>
-      <h1>Rock, Paper or Scissors game</h1>
-
-</body>
-
-<script src="javascript.js"></script>
+    <section class="game">
+      <div class="title">Rock Paper Scissors</div>
+      <div class="score">
+        <div class="playerScore">
+          <h2>Player</h2>
+          <p class="p-count count">0</p>
+        </div>
+        <div class="computerScore">
+          <h2>Computer</h2>
+          <p class="c-count count">0</p>
+        </div>
+      </div>
+      <div class="move">Choose your move</div>
+      <div class="movesleft">Moves Left: 5</div>
+      <div class="options">
+        <button class="rock">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+      </div>
+      <div class="result"></div>
+      <button class="reload"></button>
+    </section>
+  </body>
 </html>
